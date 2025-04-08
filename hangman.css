@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin: 20px auto;
+}
+
+form input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #07e803;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #00c925;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #007a1e;
+}
+
+.game-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hangman-play-area {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo, .hanglevels, .score, .letters {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    transform: scale(0.9);
+    margin: 0 auto;
+}
+
+.hanglevels {
+    transform: scale(1);
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    transform: scale(1.8); 
+    color: rgb(20, 207, 39);
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.letters-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    transform: scale(1.8); 
+    color: red;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.diffButton{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #d60e0e;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hint-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.hint-image {
+    display: block;
+    width: 40%; 
+    height: auto;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7); 
+    opacity: 0;
+    color: white; 
+    font-size: 16px; 
+}
+
+.hint-container:hover .overlay {
+    opacity: 1; 
+}
